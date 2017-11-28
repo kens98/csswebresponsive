@@ -43,14 +43,14 @@ ul li a{
 	display: inline;
 	padding: 8px;
 	
-	text-decoration: none;
+	text-decoration: underline;
 	color: #fff;
 }
 li a:hover{
 	background-color:#82c3a6;
 }
 .pagactual{
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 
