@@ -14,6 +14,8 @@ body{
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 	animation: "rebote" 1s;
+	-ms-animation:"rebote" 1s;
+	-webkit-animation:"rebote" 1s;
 }
 
 
@@ -61,10 +63,12 @@ li a:hover{
 	border-radius: 0 0 10px 10px;
 	background-color:#C6d5c5;
 	width: 100%;
+	padding-left: 15px;
+	
+	
 	display: flex;
 	flex-flow: row wrap;
 	text-align: left;
-	padding-left: 15px;
 }
 #footer .contactos,#footer .termino,#footer .redessociales,#footer .derechos{
 	width: 100%;
@@ -111,19 +115,26 @@ li a:hover{
 	-webkit-filter:drop-shadow(2px 2px 2px #02010a.);
 	border: 2px solid black;
 	width: 80%;
+	height: auto;;
 	margin: 0 auto;
-	transition: transform,1s; 
+	transition: transform,1s;
+
 }
 
 #galeria{
 	background-color:  #d5c75f;
 	border: 1px solid black;
-	display: inline-flex;
+	/*display: inline-flex;
+	-webkit-display:inline-flex;
+	-ms-display:inline-flex;
+	*/
 	flex-flow: row wrap;
+	
 }
 #galeria img{
 	margin-top: 10px;
 	margin-bottom: 10px;
+	
 }
 
 #galeria img:first-child{
@@ -138,9 +149,6 @@ li a:hover{
 	-webkit-filter:sepia(90%);
 
 }
-
-
-
 
 
 /* efectos*/
@@ -186,7 +194,8 @@ li a:hover{
 
 	#footer .contactos,#footer .termino,#footer .redessociales,#footer .derechos{
 		width: 25%;
-		margin: -5px;
+		margin-bottom: 5px;
+		margin-top: 5px;
 		text-align: center;
 	}
 	#footer h3{
@@ -223,6 +232,7 @@ li a:hover{
 	}
 	#galeria img{
 		width:25%;
+		height: 25%;
 		margin-left: 7%;
 	}
 
@@ -232,5 +242,7 @@ li a:hover{
 	.contenido, #cabecera,#central,#secundaria,#galeria{
 	width: 100%;
 	text-align: center;
-}
+	height: auto;
+	}
+	
 }
